@@ -8,6 +8,8 @@ import (
 
 func formHandler(w http.ResponseWriter, r *http.Request) {
 
+	// just checking git ext
+
 	if err := r.ParseForm(); err != nil {
 		fmt.Fprintf(w, "ParseForm() err: %v", err)
 		return
